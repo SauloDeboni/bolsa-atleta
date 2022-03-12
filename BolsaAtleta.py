@@ -24,7 +24,7 @@ def SingleName(pathToFile):
         novo_row = tabela.loc[x].tolist()
         tabela_singleName.append(novo_row)
   
-  single_dataFrame = pd.DataFrame(tabela_singleName, columns=['RACE', 'RAIA', 'NOME COMPLETO', 'CPF', 'PROVA', 'SUBCATEGORIA',
+  single_dataFrame = pd.DataFrame(tabela_singleName, columns=['RACE', 'RAIA', 'NOME COMPLETO', 'PROVA', 'SUBCATEGORIA',
        'COLOCAÇÃO', 'CLUBE', 'ESTADO', 'FINAL', 'TEMPO', 'DATA'])
  
   filename = os.path.basename(pathToFile)
