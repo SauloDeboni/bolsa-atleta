@@ -3,14 +3,12 @@ O módulo importa Panda e OS.
 
 ## SingleName
 ```
-.SingleName(caminho do arquivo excel)
+.SingleName(caminho do arquivo excel, separador)
 ```
 
-Esta função separa os resultados de barcos coletivos em linhas individuais no Excel. Deve ser indicado o caminho do arquivo atual como argumento. Um novo arquivo Excel é exportado.
+Esta função separa os resultados de barcos coletivos em linhas individuais no Excel. Deve ser indicado o caminho do arquivo atual como argumento e o caracterse separador (string). Um novo arquivo Excel é exportado.
 
-O arquivo Excel deve conter as seguintes colunas: RACE, RAIA, NOME COMPLETO, PROVA, SUBCATEGORIA, COLOCAÇÃO, CLUBE, ESTADO, FINAL, TEMPO, DATA.
-
-Os nomes dentro do campo NOME COMPLETO devem estar separados por vírgula.
+O arquivo Excel deve conter as seguintes colunas: RACE, RAIA, NOME, PROVA, SUBCATEGORIA, COLOCAcaO, CLUBE, ESTADO, FINAL, TEMPO, DATA.
 
 **Arquivo Original**
 | RACE | RAIA | NOME COMPLETO | PROVA |... |
