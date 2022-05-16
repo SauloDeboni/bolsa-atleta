@@ -13,15 +13,15 @@ def SingleName(path, separador):
             tabela_nome_duplo.append(nome_duplo)
         
             for doublename in tabela_nome_duplo:
-                separacao = doublename.split(separador + " ")
+                separacao = doublename.split(separador)
                 for singlename in separacao:
                     novo_row = tabela.loc[x].tolist()
                     novo_row[2] = singlename
                     tabela_singleName.append(novo_row)
                   
-    else:
-        novo_row = tabela.loc[x].tolist()
-        tabela_singleName.append(novo_row)
+        else:
+            novo_row = tabela.loc[x].tolist()
+            tabela_singleName.append(novo_row)
   
     single_dataFrame = pd.DataFrame(tabela_singleName, columns=['RACE', 'RAIA', 'NOME', 'PROVA', 'SEXO', 'SUBCATEGORIA',
                                                                 'COLOCACAO', 'CLUBE', 'ESTADO', 'FINAL', 'TEMPO', 'DATA'])
