@@ -73,7 +73,7 @@ def EnviarPContas(ano, data):
             now = datetime.now()
             data_registro = now.strftime("%d/%m/%Y %H:%M:%S")
             with open("EnviarPContas-Log.txt", "a+") as log:
-                log.write("Enviado, {}, {}" .format(email, data_registro)
+                log.write("Enviado, {}, {}\n" .format(email, data_registro))
 
         except Exception as e:
             print(e.message)
